@@ -1,0 +1,21 @@
+{
+  "name": "angularjs-pedalboard",
+  "version": "1.0.0",
+  "description": "An overdrive pedal for guitar.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/gandellinux/angularjs-pedalboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/gandellinux/angularjs-pedalboard#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "morgan": "^1.6.1"
+  }
+}

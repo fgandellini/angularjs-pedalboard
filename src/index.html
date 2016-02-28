@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="MyApp">
+  <head>
+    <title>AngularJS App</title>
+    <script 
+      type="text/javascript" 
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js">
+    </script>
+    <script 
+      type="text/javascript" 
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-resource.js">
+    </script>
+    <script type="text/javascript" src="/vendors/pedalboard.js/dist/compiled.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="components/board.js"></script>
+    <script type="text/javascript" src="components/pedal.js"></script>
+    <script type="text/javascript" src="components/switch.js"></script>
+    <script type="text/javascript" src="components/pot.js"></script>
+
+    <script type="text/javascript" src="services/presets.js"></script>
+    <script type="text/javascript" src="components/presets.js"></script>
+  </head>
+  <body>
+
+    <presets preset="preset"></presets>{{preset}}
+
+    <board>
+      <pedal type="Overdrive">
+        <switch label="toggle overdrive"></switch>
+        <pot type="Level" label="Volume" preset="preset.level || 1"></pot>
+        <pot type="Tone" label="Tone" preset="preset.tone"></pot>
+        <pot type="Drive" label="Distorsion" preset="preset.drive"></pot>
+      </pedal>
+    </board>
+
+  </body>
+</html>
