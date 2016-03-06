@@ -4,7 +4,7 @@ angular.module('MyApp')
   return {
     scope: true,
     transclude: true,
-    template: '<div class="board" ng-transclude></div>',
+    template: '<div class="board container" ng-transclude></div>',
     controller: function($scope, $timeout) {
 
       // init stage, audio context and board      

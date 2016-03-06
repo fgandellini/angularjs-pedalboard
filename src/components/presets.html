@@ -1,0 +1,16 @@
+<div class="col-xs-12 text-center">
+  <div class="preset {{name}}" ng-click="choose(name)" ng-repeat="name in presets">
+    <div class="settings">
+      <div class="led"></div>
+      <ul class="knobs">
+        <li class="knob"><div class="marker" style="transform: rotate(330deg);"></div></li>
+        <li class="knob"><div class="marker" style="transform: rotate(186deg);"></div></li>
+        <li class="knob"><div class="marker" style="transform: rotate(12deg);"></div></li>
+        <li class="knob"><div class="marker" style="transform: rotate(64deg);"></div></li>
+      </ul>
+    </div>
+    <div class="switch">
+      <div class="label">{{name}}</div>
+    </div>
+  </div>
+</div>

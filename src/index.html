@@ -2,6 +2,8 @@
 <html ng-app="MyApp">
   <head>
     <title>AngularJS App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="index.css"/>
     <script 
       type="text/javascript" 
       src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js">
@@ -22,17 +24,28 @@
     <script type="text/javascript" src="components/presets.js"></script>
   </head>
   <body>
-
-    <presets preset="preset"></presets>
-
     <board>
-      <pedal type="Overdrive">
-        <switch label="toggle overdrive"></switch>
-        <pot type="Level" label="Volume" preset="preset.level || 1"></pot>
-        <pot type="Tone" label="Tone" preset="preset.tone"></pot>
-        <pot type="Drive" label="Distorsion" preset="preset.drive"></pot>
-      </pedal>
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <h1>PedalBoard</h1>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <switch class="pull-right" label="toggle overdrive"></switch>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <presets preset="preset"></presets>
+      </div>
+      <hr />
+      <div class="row">
+        <pedal type="Overdrive">
+          <pot type="Level" label="Volume" preset="preset.level || 1" class="col-md-4 col-xs-12"></pot>
+          <pot type="Tone" label="Tone" preset="preset.tone" class="col-md-4 col-xs-12"></pot>
+          <pot type="Drive" label="Distorsion" preset="preset.drive" class="col-md-4 col-xs-12"></pot>
+          <div class="clearfix"></div>
+        </pedal>
+      </div>
     </board>
-
   </body>
 </html>

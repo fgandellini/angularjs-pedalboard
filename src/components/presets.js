@@ -5,11 +5,7 @@ angular.module('MyApp')
     scope: {
       preset: '='
     },
-    template: '<div>Presets:' +
-      '<span ng-repeat="name in presets">' +
-      '<button ng-click="choose(name)">{{name}}</button>' +
-      '</span>' +
-      '</div>',
+    templateUrl: '/components/presets.html',
     controller: function($scope, $element, $attrs) {
       $scope.presets = Presets.presets();
 

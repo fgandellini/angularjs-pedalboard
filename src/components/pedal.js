@@ -5,7 +5,7 @@ angular.module('MyApp')
     scope: true,
     require: '^board',
     transclude: true,
-    template: '<div class="pedal" ng-transclude></div>',
+    template: '<div class="pedal col-xs-12 text-center" ng-transclude></div>',
     controller: function($scope, $element, $attrs) {
 
       // get parent components (2 levels up)
