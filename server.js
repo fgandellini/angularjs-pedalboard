@@ -46,14 +46,14 @@ var presets = {
     drive: 0
   },
   soft: {
-    level: 0.7,
-    tone: 0.2,
-    drive: 0.1
+    level: 0.5,
+    tone: 0.1,
+    drive: 0.2
   },
   heavy: {
-    level: 0.4,
-    tone: 0.6,
-    drive: 0.9
+    level: 0.1,
+    tone: 0.5,
+    drive: 0.8
   }
 };
 
